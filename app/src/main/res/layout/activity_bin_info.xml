@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BinInfoActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scheme"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardScheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/brand"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/card_number"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/card_number_length"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardLuhn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/card_number_luhn"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/type"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/prepaid"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardPrepaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/country"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/bank"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/bankUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textColor="@color/blue"
+            android:textSize="16dp">></TextView>
+
+        <TextView
+            android:id="@+id/bankPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textColor="@color/blue"
+            android:textSize="16dp">></TextView>
+
+        <TextView
+            android:id="@+id/bankCoordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textColor="@color/blue"
+            android:textSize="16dp"></TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:hint="0000 0000"
+                android:inputType="number">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bin_hint"
+                android:textSize="14dp">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEnter"
+                android:layout_marginTop="30dp"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="ENTER"
+                android:textColor="@color/black"
+                android:background="@drawable/button">
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scheme"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/cardScheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/brand"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/cardBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/card_number"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/cardLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_number_length"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/cardLuhn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_number_luhn"
+                android:textSize="16dp"></TextView>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/cardType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/prepaid"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/cardPrepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/country"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/cardCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textSize="16dp"></TextView>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/bankUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textColor="@color/grey"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/bankPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textColor="@color/grey"
+            android:textSize="16dp"></TextView>
+        <TextView
+            android:id="@+id/bankCoordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/none"
+            android:textColor="@color/grey"
+            android:textSize="16dp"></TextView>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHistory"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:text="HISTORY"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
